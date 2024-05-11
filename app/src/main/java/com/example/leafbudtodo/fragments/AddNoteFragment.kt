@@ -59,10 +59,10 @@ class AddNoteFragment : Fragment(R.layout.fragment_add_note), MenuProvider {
             )
             notesViewModel.addNote(note)
 
-            Toast.makeText(addNoteView.context, "Note added successfully", Toast.LENGTH_SHORT).show()
+            Toast.makeText(addNoteView.context, "Plant added to the list", Toast.LENGTH_SHORT).show()
             view.findNavController().popBackStack(R.id.homeFragment, false)
         } else {
-            Toast.makeText(addNoteView.context, "Please enter a title", Toast.LENGTH_SHORT).show()
+            Toast.makeText(addNoteView.context, "Please enter a plant name", Toast.LENGTH_SHORT).show()
         }
     }
 

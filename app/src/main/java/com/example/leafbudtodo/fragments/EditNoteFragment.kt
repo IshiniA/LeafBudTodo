@@ -65,18 +65,18 @@ class EditNoteFragment : Fragment(R.layout.fragment_edit_note), MenuProvider {
                 notesViewModel.updateNote(note)
                 view.findNavController().popBackStack(R.id.homeFragment, false)
             } else {
-                Toast.makeText(context, "Please enter a title", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Please enter a plant name", Toast.LENGTH_SHORT).show()
             }
         }
     }
 
     private fun deleteNote(){
         AlertDialog.Builder(activity).apply {
-            setTitle("Delete Note")
-            setMessage("Are you sure you want to delete this note?")
+            setTitle("Delete Plant")
+            setMessage("Are you sure you want to delete this plant from the list?")
             setPositiveButton("Yes"){ _, _ ->
                 notesViewModel.deleteNote(currentNote)
-                Toast.makeText(context, "Note deleted successfully", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Plant added to the list", Toast.LENGTH_SHORT).show()
                 view?.findNavController()?.popBackStack(R.id.homeFragment, false)}
             setNegativeButton("No", null)
         }.create().show()
