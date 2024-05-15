@@ -9,7 +9,7 @@
         android:name="com.example.leafbudtodo.fragments.HomeFragment"
         android:label="HomeFragment" >
         <action
-            android:id="@+id/action_homeFragment_to_addNoteFragment"
+            android:id="@+id/action_homeFragment_to_addPlantFragment"
             app:destination="@id/addNoteFragment" />
         <action
             android:id="@+id/action_homeFragment_to_editNoteFragment"
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/addNoteFragment"
-        android:name="com.example.leafbudtodo.fragments.AddNoteFragment"
+        android:name="com.example.leafbudtodo.fragments.AddPlantFragment"
         android:label="AddNoteFragment" >
         <action
             android:id="@+id/action_addNoteFragment_to_homeFragment"
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/editNoteFragment"
-        android:name="com.example.leafbudtodo.fragments.EditNoteFragment"
+        android:name="com.example.leafbudtodo.fragments.EditPlantFragment"
         android:label="EditNoteFragment" >
         <action
             android:id="@+id/action_editNoteFragment_to_homeFragment"
@@ -33,7 +33,7 @@
 
         <argument
             android:name="note"
-            app:argType="com.example.leafbudtodo.model.Note"
+            app:argType="com.example.leafbudtodo.model.Plant"
             app:nullable="true"/>
     </fragment>
 </navigation>

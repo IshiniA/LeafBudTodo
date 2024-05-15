@@ -8,11 +8,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".NewNoteFragment"
+        tools:context=".NewPlantFragment"
         android:padding="12dp">
 
         <TextView
-            android:id="@+id/addNoteHeading"
+            android:id="@+id/addPlantHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -24,20 +24,20 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/addNoteTitle"
+            android:id="@+id/add_plant_title"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:hint="Enter Plant Name"
             android:padding="12dp"
             android:textSize="20sp"
-            android:layout_below="@id/addNoteHeading"
+            android:layout_below="@id/addPlantHeading"
             android:background="@drawable/g_border"
             android:layout_marginTop="16dp"
             android:maxLines="1"
             android:fontFamily="@font/poppins"/>
 
         <EditText
-            android:id="@+id/addNoteDesc"
+            android:id="@+id/addPlantDesc"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Enter care routine (Watering and Fertilization Schedule)"
@@ -46,7 +46,7 @@
             android:textSize="18sp"
             android:fontFamily="@font/poppins"
             android:background="@drawable/g_border"
-            android:layout_below="@id/addNoteTitle"
+            android:layout_below="@id/add_plant_title"
             android:layout_marginTop="12dp" />
 
     </RelativeLayout>

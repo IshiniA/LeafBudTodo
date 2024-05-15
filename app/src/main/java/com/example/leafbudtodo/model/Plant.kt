@@ -5,13 +5,14 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import kotlinx.parcelize.Parcelize
 
-@Entity(tableName = "notes")
+// Entity annotation defines this class as a database entity
+@Entity(tableName = "plants")
 @Parcelize // converts complex objects into a format that can be easily transferred between activities/fragments
-data class Note(
+data class Plant(
     @PrimaryKey(autoGenerate = true)
     val id: Int,
     val title: String,
     val description: String,
 
-    ): Parcelable
+    ): Parcelable // Implementing Parcelable interface allows the object to be passed between components using Intent extras or Bundle arguments
 

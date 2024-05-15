@@ -9,10 +9,10 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="12dp"
-        tools:context=".UpdateNoteFragment">
+        tools:context=".UpdatePlantFragment">
 
         <TextView
-            android:id="@+id/editNoteHeading"
+            android:id="@+id/editPlantHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -24,20 +24,20 @@
             android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/editNoteTitle"
+            android:id="@+id/edit_plant_title"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:hint="Enter Plant Name"
             android:padding="12dp"
             android:textSize="20sp"
-            android:layout_below="@id/editNoteHeading"
+            android:layout_below="@id/editPlantHeading"
             android:background="@drawable/g_border"
             android:layout_marginTop="16dp"
             android:maxLines="1"
             android:fontFamily="@font/poppins"/>
 
         <EditText
-            android:id="@+id/editNoteDesc"
+            android:id="@+id/editPlantDesc"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Enter care routine (Watering and Fertilization Schedule)"
@@ -46,11 +46,11 @@
             android:textSize="18sp"
             android:fontFamily="@font/poppins"
             android:background="@drawable/g_border"
-            android:layout_below="@id/editNoteTitle"
+            android:layout_below="@id/edit_plant_title"
             android:layout_marginTop="12dp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/editNoteFab"
+            android:id="@+id/editPlantFab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="20dp"
